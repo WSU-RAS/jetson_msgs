@@ -84,6 +84,7 @@ class GoToObject:
             if state == GoalStatus.SUCCEEDED:
                 rospy.loginfo("Move base goal succeeded")
             else:
+                self.move_base.cancel_goal()
                 rospy.logwarn("Move base goal not success")
 
     def callback_object(self, data):
