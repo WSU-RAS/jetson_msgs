@@ -12,7 +12,7 @@ import json
 import rospy
 import actionlib
 from std_msgs.msg import String
-from ras_jetson_msgs.srv import ObjectQuery, ObjectQueryResponse
+from object_detection_msgs.srv import ObjectQuery, ObjectQueryResponse
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from actionlib_msgs.msg import GoalStatus
 

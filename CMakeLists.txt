@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(ras_jetson_msgs)
+project(object_detection_msgs)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -104,7 +104,7 @@ generate_messages(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES ras_jetson_msgs
+#  LIBRARIES object_detection_msgs
 #  CATKIN_DEPENDS message_generation rospy sensor_msgs std_msgs
 #  DEPENDS system_lib
   CATKIN_DEPENDS message_runtime
@@ -123,7 +123,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/ras_jetson_msgs.cpp
+#   src/${PROJECT_NAME}/object_detection_msgs.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -134,7 +134,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/ras_jetson_msgs_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/object_detection_msgs_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -191,7 +191,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_ras_jetson_msgs.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_object_detection_msgs.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
