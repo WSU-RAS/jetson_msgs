@@ -108,6 +108,7 @@ class GoToObject:
 if __name__ == '__main__':
     try:
         node = GoToObject()
-        rospy.spin()
+        node.goTo(0, 0)
+        #rospy.spin()
     except rospy.ROSInterruptException:
         pass
